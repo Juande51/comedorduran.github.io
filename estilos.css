@@ -1,0 +1,84 @@
+body{margin:0;padding: 0;}
+header{
+	width: 100vw;
+	height: auto;
+	margin: auto;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.4);
+  	-webkit-backdrop-filter: blur(5px);
+  	backdrop-filter: blur(5px);
+	position: fixed;
+	z-index: 9999;
+}
+header p{
+	font-size: 30px;
+}
+
+.gorditas{
+	width: 100vw;
+	
+}
+.gorditas .guiso{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 50vw;
+}
+.gorditas .guiso p{
+	height: 50px;
+	margin: 5px;
+	text-align: center;
+	font-size: 18px;
+	flex:1 1 100px;
+}
+
+
+.contenedor{
+	width: 100vw;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+.comida, .hm{
+	padding-top: 200px;
+	text-align: center;
+}
+.contenedor .platillo{
+	margin: auto;
+	width: 40vw;
+	height: 80vh;
+}
+
+.contenedor .platillo img{
+	width: 40vw;
+}
+.contenedor .platillo p{
+	padding: 10px;
+	text-align: justify;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+	.comida, .hm{
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	.contenedor{
+		margin: 0;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+	}
+	.contenedor .platillo{
+		margin-bottom: 8px;
+		width: 80vw;
+		height: auto;
+	}
+	.contenedor .platillo img{
+		width: 80vw;
+	}
+	.contenedor .platillo p{
+		margin: auto;
+		padding: 5px;
+	}
+}
